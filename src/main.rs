@@ -1,5 +1,5 @@
 fn main() -> anyhow::Result<()> {
-    let ghp = std::env::var("GH_RELEASE")?;
+    let ghp = std::env::var("GH_BELL_PAT")?;
 
     let payload = gh_bell::get_notifications(ghp)?;
 
