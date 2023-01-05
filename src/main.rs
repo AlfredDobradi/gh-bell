@@ -10,7 +10,7 @@ fn main() -> anyhow::Result<()> {
 
     payload.iter()
         .for_each(|item| {
-            println!("#{} - [{}] {} ({})", item.id, item.reason, item.subject.title, item.subject.url);
+            println!("#{} - [{}/{}] {} ({})", item.id, item.reason, item.subject.kind, item.subject.title, item.subject.url);
         });
 
     Ok(())
